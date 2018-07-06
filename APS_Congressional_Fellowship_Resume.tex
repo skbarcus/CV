@@ -1,0 +1,239 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+%
+% If you have never used LaTeX before, talk you your advisor about
+% how to compile this into a PDF.
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{hyperref}
+\usepackage[hmargin=1.5cm,vmargin=1.5cm]{geometry}
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+\usepackage{setspace}
+
+\usepackage{mdwlist}
+
+% Set your name here
+\def\name{Scott K. Barcus}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {CV, physics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+\usepackage{titlesec}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+\renewcommand{\baselinestretch}{0.0}{
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+\hrule height 0.8pt \relax 
+\vspace{3mm}
+\begin{minipage}{0.45\linewidth}
+  \href{http://www.wm.edu/}{101 Lake Powell Road Apartment L} \\
+  Williamsburg, VA 23185 \\
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & 651-324-9205 \\
+    Email: & \href{mailto:me@email.wm.edu}{skbarcus@email.wm.edu} \\ %\tt
+  \end{tabular}
+\end{minipage}
+
+%\titlespacing{\section}{0pt}{\parskip}{-\parskip}
+%\titlespacing\section*{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+
+%\setlength{\parskip}{\baselineskip}
+%\newlength{\aftersection}
+%\setlength{\aftersection}{0pt}
+%\addtolength{\aftersection}{0pt}%-1\parskip}
+%\newlength{\beforesection}
+%\setlength{\beforesection}{0pt}
+%\addtolength{\beforesection}{0pt}%-1\parskip}
+%\titlespacing*{\section}{-50pt}{\aftersection}{\beforesection}
+\hrule height 0.8pt \relax 
+\vspace{3mm}
+{\Large{\bf{Data Driven Policy Experience}}}
+\begin{itemize}\itemsep1pt \parskip2pt \parsep0pt
+	\item {\large {\bf Chair of William and Mary's physics department Climate Steering Committee (CSC)} }
+	\begin{itemize}\itemsep1pt \parskip2pt \parsep0pt
+ %\singlespacing{
+		\item $\bullet$ While chairing the CSC I developed and implemented evidence based policy recommendations for the department's administration with the goal of improving the department's climate. 
+		\item $\bullet$ Performed data gathering and fact finding through multiple methods including:
+			\begin{itemize}
+				\item i. Scholarly literature on climate issues and best practices were studied.
+				\item ii. Experts on climate were consulted to learn successful techniques to address climate issues.
+				\item iii. Surveys distributed to department constituencies such as faculty and students to identify issues.
+				\item iv. Department-wide hearings were held to hear concerns and suggestions for how to improve policy.
+			\end{itemize}
+		\item $\bullet$ Developed policy recommendations based on the scholarly research collected and expert advise to address the issues discovered.
+		\item $\bullet$ Communicated policy recommendations to the administration and explained how those recommendations were reached and how they could best be implemented.
+		\item $\bullet$ Key policy accomplishments of the CSC under my leadership include:
+			\begin{itemize}
+				\item i. Created and implemented a Diversity Plan for the department.
+				\item ii. Established a new departmental committee to improve colloquia quality.
+				\item iii. Ratified a Code of Conduct and Statement of Values with department support and approval.
+				\item iv. Informed the public of the committee's work by publishing updates on policies being developed.
+				\item v. Implemented annual climate surveys so that the efficacy of new policies can be tracked objectively.
+			\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+{\Large{\bf{Scientific Expertise}}}
+\begin{itemize}\itemsep1pt \parskip2pt \parsep0pt
+	\item {\large {\bf Nuclear Physics at Thomas Jefferson National Accelerator Facility (JLab)} }
+	\begin{itemize}\itemsep1pt \parskip2pt \parsep0pt
+ %\singlespacing{
+ 		\item $\bullet$ Built and designed particle detectors for upcoming experiments at JLab.
+		\item $\bullet$ Created and tested data acquisition system for GRINCH Cherenkov detector.
+		\item $\bullet$ Extracted nuclear form factors for $^3$He and $^3$H using elastic electron scattering.
+		\item $\bullet$ Engaged in self-directed literature reviews to learn new scientific topics needed for my research. 
+		\item $\bullet$ Participated in running numerous experiments at JLab including DVCS, GMp, Ar(e,e'p), and the Tritium suite of experiments. Publications are currently in progress for these experiments. 
+	\end{itemize}
+	\item {\large {\bf Data Analysis} }
+	\begin{itemize}\itemsep1pt \parskip2pt \parsep0pt
+ %\singlespacing{
+		\item $\bullet$ Analyzed large data sets to extract physics quantities including:
+			\begin{itemize}
+				\item i. Detector efficiencies.
+				\item ii. Nuclear form factors.
+				\item iii. Good electron samples.
+			\end{itemize}
+		\item $\bullet$ Developed software to monitor the electronic dead time of the JLab data acquisition system in real-time to ensure quality data is collected.
+		\item $\bullet$ Gathered world data for $^3$He and $^3$H form factors, and performed a new set of global fits to the data incorporating new data points and extracting charge radii.
+	\end{itemize}
+		\item {\large {\bf Computational Physics} }
+	\begin{itemize}\itemsep1pt \parskip2pt \parsep0pt
+ %\singlespacing{
+ 		\item $\bullet$ Created computer simulations of particle detectors using GEANT4.
+		\item $\bullet$ Used Monte Carlo techniques to model physical processes and confirm experimental outcomes.
+		\item $\bullet$ Familiar with many different programming languages including C++, ROOT, Python, Fortran, Mathematica, VHDL, Tcl, and Bash scripting.
+	\end{itemize}
+\end{itemize}
+
+{\Large{\bf{Communication Skills}}}
+\begin{itemize}\itemsep1pt \parskip2pt \parsep0pt
+ %\singlespacing{
+ 	\item $\bullet$ Skilled at taking large amounts of complex data and presenting it in an easily digestible form.
+ 	\item $\bullet$ Collaborated with scientists from institutions around the world to perform and analyze experiments.
+ 	\item $\bullet$ Coordinated with designers and engineers to build equipment to required specifications for experiments at JLab.
+	\item $\bullet$ Regularly gave presentations and progress reports at collaboration meetings and presented results at conferences.
+	\item $\bullet$ Developed and wrote the procedures for performing numerous tasks during experimental runs at JLab so that shift workers unfamiliar with the experiments could perform the work properly. 
+	\item $\bullet$ Worked with industry representatives to communicate our experimental needs and develop an appropriate product within budgetary constraints. This required explaining technical issues in a manner that those without subject matter expertise could understand.
+\end{itemize}
+
+{\Large{\bf{Leadership}}}
+\begin{itemize}\itemsep1pt \parskip2pt \parsep0pt
+	\item $\bullet$ Mentored junior graduate students and undergraduates as they learned to work at a national laboratory.
+	\item $\bullet$ Chaired the College of William and Mary's physics department Climate Steering Committee and coordinated all of the committee's work. 
+	\item $\bullet$ Took initiative to investigate software systems with anomalous readings and discovered numerous errors that were corrected improving data quality.
+	\item $\bullet$ Routinely organized and lead teams of graduate students in accomplishing experimental goals such as data analysis, hardware maintenance, and communicating research results to others.
+\end{itemize}
+
+%\section*{Education}
+{\Large{\bf{Education}}}
+\begin{itemize}\itemsep1pt \parskip2pt \parsep0pt
+ %\singlespacing{	
+  \item B.S. Physics, B.S. Mathematics, B.S. Astronomy, Drake University, 2012.
+  \item M.S. Physics, College of William and Mary, 2014.
+  \item Ph.D. Physics, College of William and Mary, expected August 2018.
+\end{itemize}
+
+%\clearpage
+
+%\section*{Publications}
+{\Large{\bf{Publications}}}
+%\subsection*{Papers}
+\begin{itemize}\itemsep1pt \parskip2pt \parsep0pt
+	\item {\large{\bf{Papers}}}
+	\begin{enumerate}\itemsep1pt \parskip2pt \parsep0pt
+		\item  Scott Barcus \textit{et al.} Near-unity nuclear polarization with an open-source 129Xe hyperpolarizer for NMR and MRI PNAS 2013 ; published ahead of print August 14, 2013, doi:10.1073/pnas.1306586110
+	\end{enumerate}
+\end{itemize}
+%\subsection*{Talks and Posters}
+\begin{itemize}\itemsep1pt \parskip2pt \parsep0pt
+	\item {\large{\bf{Talks}}}
+	\begin{enumerate}\itemsep1pt \parskip2pt \parsep0pt
+		\setcounter{enumi}{1}
+		%\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt
+		\item \textit{``Dynamic Mass of Self-Interacting Fermions''} Poster. Annual Meeting of the Iowa Academy of Sciences, Mason City, IA, April 2012.
+
+		\item \textit{"9125B ET Photomultiplier Tubes with a Wavelength Shifting Paint for a Gas Cherenkov Counter"} Talk presented to the 2015 April Meeting of the APS. Balitmore, MD, April 11 2015. 
+	\end{enumerate}
+\end{itemize}
+%\end{itemize}
+
+\bigskip
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+}
+\end{document}

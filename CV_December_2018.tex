@@ -1,0 +1,459 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+%
+% If you have never used LaTeX before, talk you your advisor about
+% how to compile this into a PDF.
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{hyperref}
+\usepackage[hmargin=1.5cm,vmargin=1.5cm]{geometry}
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+\usepackage{setspace}
+
+\usepackage{mdwlist}
+
+% Set your name here
+\def\name{Scott K. Barcus}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {CV, physics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+\usepackage{titlesec}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\large}
+%\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+\renewcommand{\baselinestretch}{0.0}{
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \href{http://www.wm.edu/}{101 Lake Powell Road Apartment L} \\
+  Williamsburg, VA 23185 \\
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (651) 324-9205 \\
+    Email: & \href{mailto:me@email.wm.edu}{\tt skbarcus@email.wm.edu} \\
+  \end{tabular}
+\end{minipage}
+
+%\titlespacing{\section}{0pt}{\parskip}{-\parskip}
+%\titlespacing\section*{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+
+%\setlength{\parskip}{\baselineskip}
+%\newlength{\aftersection}
+%\setlength{\aftersection}{0pt}
+%\addtolength{\aftersection}{0pt}%-1\parskip}
+%\newlength{\beforesection}
+%\setlength{\beforesection}{0pt}
+%\addtolength{\beforesection}{0pt}%-1\parskip}
+%\titlespacing*{\section}{-50pt}{\aftersection}{\beforesection}
+
+%\section*{Education}
+
+{\Large{\bf{Education}}}
+\begin{itemize}
+	\item {\large{\bf{Graduate}}}
+	\item {\large{\textit{The College of William \& Mary}}}
+		\begin{itemize}\itemsep1pt \parskip2pt \parsep0pt
+ 	 		\item $\bullet$ Ph.D. Physics, expected January 2019.
+ 	 			\begin{itemize}
+ 	 				\item - \textit{Extraction and Parametrization of Isobaric Trinucleon Elastic Cross Sections
+and Charge Form Factors}
+ 	 			\end{itemize}
+  			\item $\bullet$ M.S. Physics, 2014.
+		\end{itemize}
+	\item {\large{\bf{Undergraduate}}}
+	\item {\large{\textit{Drake University}}}
+		\begin{itemize}
+			\item $\bullet$ B.S. Physics, 2012.
+			\item $\bullet$ B.S. Astronomy, 2012.
+			\item $\bullet$ B.S. Mathematics, 2012.
+		\end{itemize}
+\end{itemize}
+
+%\clearpage
+
+%\section*{Research Experience}
+{\Large{Research Experience}}
+\begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+
+\item {\large {\bf Jefferson National Laboratory Elastic $^{3}$He Cross Section Extraction 2017-Present} }
+	\begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+		\item \textbf{Cross Section Extraction:}
+			\begin{itemize}\itemsep5pt
+				\item $\bullet$ Calculated yield of electrons elastically scattered off gaseous $^{3}$He target during experiment E08-014.   
+				\item $\bullet$ Performed a background subtraction of the target cell's aluminium walls leaving only events scattered from $^{3}$He.
+				\item $\bullet$ Determined the efficiencies of detectors including the VDCs, gas Cherenkov, and pion rejectors.
+				\item $\bullet$ Calculated the cross section for elastic scattering off of $^{3}$He in the high Q$^2$ region of Q$^2 \approx 34.2$ fm$^{-2}$.
+			\end{itemize}
+		\item \textbf{Simulation:}
+			\begin{itemize}\itemsep5pt
+				\item $\bullet$ Performed Monte Carlo simulations of elastic electron scattering off $^{3}$He with JLab's SIMC package. 
+				\item $\bullet$ Used Monte Carlo simulation results to determine the acceptance for elastically scattered electrons of the Hall A high resolution spectrometers during experiment E08-014. 
+				\item $\bullet$ Modelled the radiative effects present in experimental data using SIMC to apply radiative corrections to the $^{3}$He cross section.
+			\end{itemize}
+		\item \textbf{Global Fits and Form Factors:}
+			\begin{itemize}\itemsep5pt
+				\item $\bullet$ Compiled a database containing the world data on $^{3}$H, $^{3}$He, and $^{4}$He cross sections and form factors.
+				\item $\bullet$ Developed code to fit $^{3}$H and $^{3}$He cross section world data with a sum of Gaussians (SOG) technique. 
+				\item $\bullet$ Extracted charge and magnetic form factors from these global fits incorporating modern data. 
+				\item $\bullet$ Calculated charge densities for $^{3}$H and $^{3}$He from new fits and extracted charge radii. 
+			\end{itemize}
+			
+			\item \textbf{Communication:}
+			\begin{itemize}\itemsep5pt
+				\item $\bullet$ Presented results at the Gordon Research Conference in August 2018.
+				\item $\bullet$ Presented results at the APS Division of Nuclear Physics meeting in October 2018.
+			\end{itemize}
+	\end{itemize}
+	
+	\vspace{3mm}
+	
+ \item {\large {\bf Jefferson National Laboratory Tritium Experiments and Ar(e,e'p) Experiment 2016-Present} }
+
+ \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+  \item \textbf{Physics Analyses:}
+    \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+     \item $\bullet$ Performed optics calibration procedure for path reconstruction of particle tracks through the high resolution spectrometers in JLab Hall A.
+     \item $\bullet$ Performed particle identification distinguishing electrons from pions by placing physics cuts on the ADC spectra of gas Cherenkovs and electromagnetic calorimeters.
+     \end{itemize}
+
+  \item \textbf{Hardware/Software:}
+    \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+     \item $\bullet$ Performed detector maintenance in JLab's Hall A emphasizing the vertical drift chambers (VDCs). 
+     \item $\bullet$ Maintained and configured the Hall A data acquisition system for the high resolution spectrometers.
+     \item $\bullet$ Maintained and built graphical user interfaces (GUIs) used by shift workers to operate the Hall A DAQ system as well as monitor data quality.
+     \item $\bullet$ Wrote code to monitor electronics induced dead time in real-time for the Tritium experiments.
+    \end{itemize}
+    
+   \item \textbf{Simulation:}
+     \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+      \item $\bullet$ Built GEANT4 simulation of high resolution spectrometer pion rejector (calorimeter).
+      \item $\bullet$ Built a Monte Carlo simulation of the Hall A VDCs to identify and reduce crosstalk between wires. 
+     \end{itemize} 
+     
+     \item \textbf{Shift Work:}
+     \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+      \item $\bullet$ Shift worker for DVCS, GMp, Ar(e,e'p), and Tritium suite of experiments. Responsibilities included: 
+      	\begin{itemize}\itemsep2pt
+      		\item - Monitoring data quality.
+      		\item - Replaying and analyzing data. 
+      		\item - Communicating with accelerator control.
+      	\end{itemize} 
+      \item $\bullet$ Shift leader for the Tritium experiments. Responsibilities included:
+		\begin{itemize}\itemsep2pt
+			\item - Coordinating workers on shift as well as with accelerator operations.
+			\item - Executing the run plan laid out by the spokespeople and run coordinator. 
+			\item - Troubleshooting experimental issues during runs such as equipment failures.
+		\end{itemize}      
+      \item $\bullet$ Cryotarget operator for Tritium suite of experiments. Responsibilities included:
+      	\begin{itemize}\itemsep2pt
+        		\item - Ensuring that the cryogenic $^{3}$H target maintained a proper temperature.
+        		\item - Coordinating movement between different experimental targets with accelerator control.
+      	\end{itemize}
+     \end{itemize} 
+     
+     \item \textbf{Communication/Teamwork:}
+		\begin{itemize}\itemsep5pt
+			\item $\bullet$ Regularly gave presentations to weekly collaboration meetings.
+			\item $\bullet$ Organized and led teams of graduate students in completing experimental tasks.
+		\end{itemize}
+     
+ \end{itemize}
+ 
+ \vspace{3mm}
+ 
+\item {\large {\bf Jefferson National Laboratory GRINCH DAQ and VETROC Board 2015-2016} }
+
+ \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+  \item \textbf{Physics Analyses:}
+    \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+     \item $\bullet$ Performed benchmark tests on JLab's new VETROC board for use as a self-triggering high-rate TDC. Parameters determined include sensitivity, data rate vs. dead time, and two-hit resolution.
+     \end{itemize}
+
+  \item \textbf{Hardware/Software:}
+    \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+     \item $\bullet$ Built data acquisition (DAQ) system for GRINCH detector using the VETROC board which is capable of forming triggers in real-time for high data rates. 
+     \item $\bullet$ Built a FASTBUS DAQ system for the GRINCH detector which was tested with a prototype detector to compare FASTBUS performance with VETROC performance.
+     \item $\bullet$ Developed cluster finding algorithm written in VHDL to form the main GRINCH trigger using FPGAs built into the VETROC board.
+     \item $\bullet$ Developed event display for GRINCH detector using ROOT. 
+    \end{itemize}
+    
+   \item \textbf{Simulation:}
+     \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+      \item $\bullet$ Built GEANT4 simulation of GRINCH prototype detector.
+     \end{itemize} 
+     
+   \item \textbf{Communication:}
+	\begin{itemize}\itemsep5pt
+		\item $\bullet$ Presented results of VETROC tests to JLab collaborators.
+	\end{itemize}
+ \end{itemize}
+
+\vspace{3mm}
+
+\item {\large {\bf Jefferson National Laboratory GRINCH PMT Studies 2013-2016} }
+
+ \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+  \item \textbf{Physics Analyses:}
+   
+    \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+     \item $\bullet$ Analyzed a wavelength shifting (WLS) paint's effect on 9125B photomultiplier tubes to determine if the WLS paint could increase the number of UV photoelectrons detected in the GRINCH. 
+     \item $\bullet$ Determined the optimal WLS paint thickness to maximize photoelectron detection using a coordinate measuring machine.
+     \item $\bullet$ Collaborated with a scientist at Fermilab to determine the emission spectrum of the WLS paint to be applied to the GRINCH PMTs.
+     \item $\bullet$ Calculated the gain in photoelectrons detected by PMTs due to the application of the WLS paint. 
+     \end{itemize}
+
+  \item \textbf{Hardware:}
+    \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+     \item $\bullet$ Designed and built a detector to measure Cherenkov light created in a silica crystal by cosmic rays. 
+     \item $\bullet$ Measured the amount of light absorbed by a WLS paint at various wavelengths using a spectrometer. 
+    \end{itemize}
+    
+  \item \textbf{Communication:}
+	\begin{itemize}\itemsep5pt
+		\item $\bullet$ Collaborated with Eljen Technologies to create a custom WLS paint meeting our specific needs.
+	\end{itemize}
+    
+ \end{itemize}
+
+\vspace{3mm}
+
+\item {\large {\bf College of William and Mary GRINCH Detector 2013-2016} }
+ \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+  \item \textbf{Physics Analyses:}
+   
+    \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+     \item $\bullet$ Studied the optical properties of the mirror system for the Gas Ring-ImagiNg CHerenkov (GRINCH) detector built for experiments at the Thomas Jefferson National Accelerator Facility. 
+     \item $\bullet$ Optimized photon collection by finding the ideal radius of curvature and angle for each mirror.
+     \end{itemize}
+
+  \item \textbf{Hardware:}
+    \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+     \item $\bullet$ Built the mirror system to be used in the GRINCH Cherenkov detector.
+     \item $\bullet$ Designed and implemented procedure to align the mirror system to direct light onto the PMT array using a laser mounted on a 360$^\circ$ linear rail system.
+    \end{itemize}
+    
+   \item \textbf{Simulation:}
+     \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+      \item $\bullet$ Created a simulation of the GRINCH detector mirror system in Mathematica to investigate anomalous experimental results.
+     \end{itemize} 
+ 
+\end{itemize}
+
+\vspace{3mm}
+
+\item {\large {\bf College of William and Mary SEOP 2012-2013} }
+ \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+  \item \textbf{Physics Analyses:}
+   
+    \begin{itemize}\itemsep5pt
+     \item $\bullet$ Developed code in LabVIEW to make a SEOP apparatus perform a `spin flip' of polarized $^{3}$He.
+     \item $\bullet$ Studied $^{3}$He polarized by SEOP as it underwent `spin flips' using NMR.
+     \end{itemize}
+
+  \item \textbf{Hardware:}
+    \begin{itemize}\itemsep5pt
+     \item $\bullet$ Built laser interlock system for SEOP pumping lasers to automatically regulate cell temperatures. 
+    \end{itemize}
+ 
+\end{itemize}
+
+\vspace{3mm}
+
+\item {\large {\bf Drake University 2011-2012} }
+ \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+  \item \textbf{Physics Analyses:} 
+    \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+     \item $\bullet$ Studied the mass renormalization of the electron due to self-coupling interactions numerically by means of a staggered-leap-frog algorithm.   
+     \end{itemize}
+     
+    \item \textbf{Communication:}
+	\begin{itemize}\itemsep5pt
+		\item $\bullet$ Presented results to the annual meeting of the Iowa Academy of Sciences in April 2012.
+	\end{itemize}
+     
+\end{itemize}
+
+\vspace{3mm}
+
+\item {\large {\bf University of Southern Illinois Carbondale SEOP 2011 } }
+ \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+  \item \textbf{Physics Analyses:} 
+    \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+     \item $\bullet$ Performed Spin Exchange Optical Pumping (SEOP) on $^{129}$Xe to hyperpolarize the $^{129}$Xe gas.
+     \item $\bullet$ Optimized $^{129}$Xe polarization via pumping laser calibrations studied via NMR spectroscopy. 
+     \item $\bullet$ Developed LabVIEW GUI and control software for pumping laser. 
+     \end{itemize}
+
+  \item \textbf{Hardware:}
+    \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+     \item $\bullet$ Built SEOP apparatus used to polarize $^{129}$Xe used for medical imaging research. 
+     \item $\bullet$ The apparatus successfully polarized $^{129}$Xe via rubidium SEOP replacing an expensive proprietary polarization apparatus made by GE. 
+    \end{itemize}
+\end{itemize}
+
+\end{itemize} 
+
+{\Large{Awards and Honors}}
+\begin{itemize} \itemsep5pt \parskip0pt \parsep0pt
+  \item $\bullet$ \textbf{Presidential Scholarship:} Drake University 2008-2012.
+  \item $\bullet$ \textbf{Physics Scholarship:} Drake University 2008-2012.
+  \item $\bullet$ \textbf{Best Student Organized Programming:} Runner up, Drake University 2008.
+  \item $\bullet$ \textbf{Deans List:} Drake University 2008-2012.
+  \item $\bullet$ \textbf{Jefferson Science Associates Graduate Fellowship:} Awarded to study electron scattering off of $^3$H and $^3$He at the Thomas Jefferson National Accelerator Facility, 2017-2018.
+  \item $\bullet$ \textbf{Jefferson Lab Run-A-Round:} First place in the men's 26-35 division run, May 2018. 
+\end{itemize}
+
+%\section*{Teaching Experience}
+{\Large{Teaching Experience}}
+\begin{itemize} \itemsep5pt \parskip0pt \parsep0pt
+  \item $\bullet$ \textbf{Physics Tutor:} Tutor of Undergraduate Physics, Fall Semester 2010 - Spring Semester 2011.
+  \item $\bullet$ \textbf{Teaching Assistant:} Astronomy Laboratory, Fall Semester 2012.
+\end{itemize}
+
+%\section*{Professional Development}
+{\Large{Professional Development}}
+\begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+ \item $\bullet$ \textbf{REU Researcher:} Studied spin exchange optical pumping of $^{129}$Xe for medical imaging at the University of Southern Illinois Carbondale, Summer 2011.
+ \item $\bullet$ \textbf{Hampton University Graduate Summer Program:} Summer school hosted by Jefferson Lab for Graduate students in experimental and theoretical nuclear physics, Summer 2016.
+\end{itemize}
+
+%\section*{Professional Service}
+{\Large{Professional Service/Volunteer Work}}
+\begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+  \item $\bullet$ \textbf{Treasurer:} Society of Physics Students, Drake University, 2011-2012.
+  
+  \item $\bullet$ \textbf{W$\&$M Climate Steering Committee:} Formed to assess social climate issues in the physics department and propose policy to resolve issues, College of William and Mary, 2015-present.
+  	\begin{itemize}\itemsep2pt
+  		\item - Founding member of CSC, 2015-2016. 
+  		\item - Co-chair of CSC, November 2016 - August 2018. 
+  			\begin{itemize}
+  			\item i. Wrote a Code of Conduct and Statement of Values which the W$\&$M physics department then ratified.
+  			\item ii. Created regular social climate surveys to flag climate issues and track the efficacy of new policies. 
+  		 	\end{itemize}
+  	\end{itemize}
+  
+  \item $\bullet$ \textbf{W$\&$M Diversity Advisory Committee Co-Chair:} Co-chaired the newly formed DAC tasked with improving the department's climate and increasing diversity, College of William and Mary, August 2018-present.
+  	\begin{itemize}
+  		\item - Created and implemented a Diversity Plan aimed at recruiting women and underrepresented minorities.
+  	\end{itemize}
+\end{itemize}
+
+%\section*{Professional Development}
+{\Large{Professional Organizations}}
+\begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+ \item $\bullet$ \textbf{American Geophysical Union}
+ \item $\bullet$ \textbf{American Physical Society}
+\end{itemize}
+
+%\section*{Publications}
+{\Large{Publications}}
+\subsection*{Papers}
+\begin{enumerate}\itemsep1pt \parskip0pt \parsep0pt
+\item Nikolaou, \textit{et al.} \textit{``Near-unity nuclear polarization with an open-source 129Xe hyperpolarizer for NMR and MRI.''}
+PNAS 2013, August 14, 2013, \url{http://dx.doi.org/10.1073/pnas.1306586110}.
+
+\item Dai \textit{et al.} \textit{``First Measurement of the Ti$(e,e^{'})$X Cross Section at Jefferson Lab.''} Physical Review C, vol. 98, no. 1, 2018, \url{http://dx.doi.org/10.1103/physrevc.98.014617}.
+
+\item Dai, \textit{et al.} \textit{``First Measurement of the Ar$(e,e^{'})$X Cross Section at Jefferson Lab.''} October 24, 2018, \\ \url{https://arxiv.org/abs/1810.10575}.
+
+\item S. N. Santiesteban, \textit{et al.} \textit{``Density Changes in Low Pressure Gas Targets for Electron Scattering Experiments.''} November 26, 2018, \url{https://arxiv.org/abs/1811.12167}
+
+\item R. Cruz-Torres, \textit{et al.} \textit{``Probing nucleon momentum distributions in A = 3 nuclei via $^3$He and $^3$H(e, e'p) measurements.''} December 18, 2018, Phys. Rev. Lett. Preprint
+
+\end{enumerate}
+\subsection*{Talks and Posters}
+
+
+	\begin{enumerate}\itemsep1pt \parskip2pt \parsep0pt
+		\setcounter{enumi}{0}
+		%\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt
+		\item \textit{``Dynamic Mass of Self-Interacting Fermions''}. Annual Meeting of the Iowa Academy of Sciences, Mason City, IA, April 2012.
+
+		\item \textit{"9125B ET Photomultiplier Tubes with a Wavelength Shifting Paint for a Gas Cherenkov Counter"} Talk presented to the 2015 April Meeting of the APS. Balitmore, MD, April 11 2015. 
+		
+		\item \textit{``New $^3$He Form Factor Measurements and Global Fits''}. Photonuclear Reactions Gordon Research Conference, Holderness, NH, August 2018.
+		
+		\item \textit{``New $^3$He Elastic Cross Section Measurements and Global Fits''}. Talk presented to the American Physical Society Division of Nuclear Physics Meeting, Waikoloa Village, HI, October 27 2018.
+	\end{enumerate}
+
+
+\bigskip
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+}
+\end{document}
